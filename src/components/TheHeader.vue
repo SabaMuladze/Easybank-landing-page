@@ -1,8 +1,8 @@
 <template >
-    <div>
+    <div class="cont">
         <header>
         <img src="../assets/images/logo.svg" alt="logo">
-        <img :src="outputBurgerPic" @click="changeBurgerPic">
+        <img class="burger" :src="outputBurgerPic" @click="changeBurgerPic">
     </header>
     <div class="menu" v-if="menu">
         <ul>
@@ -24,14 +24,30 @@ data() {
     return {
         menu: false,
         burger:'src/assets/images/icon-hamburger.svg',
-        closeBurger: 'src/assets/images/icon-close.svg'
+        closeBurger: 'src/assets/images/icon-close.svg',
+        screenWidth: window.innerWidth
     }
     
 },
+mounted() {
+    window.addEventListener('resize', this.handleResize);
+    document.addEventListener('DOMContentLoaded', this.pageLoad );
+  },
+  
 methods: {
         changeBurgerPic(){
             this.menu = !this.menu
-        }
+        },
+        handleResize() {
+            if (this.screenWidth >= 1024) {
+                this.menu = true
+            }
+      this.screenWidth = window.innerWidth;
+      
+    },
+    pageLoad(){
+       this.handleResize()
+    }
     },
     computed:{
         outputBurgerPic(){
@@ -42,6 +58,9 @@ methods: {
 </script>
 
 <style scoped>
+.cont{
+    position: relative;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -53,13 +72,17 @@ header{
 p{
     color: #9698A6;
 }
+
+.burger{
+    transition: ease-in 1s;
+}
 .menu{
     margin: 9px 16px 10px 16px;
     background-color: white ;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-
+    transition: ease-in 1s;
 }
 .menu li {
     list-style: none;
@@ -67,5 +90,30 @@ p{
 .pages-p{
     font-size: 24px;
     margin: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+.menu ul {
+    display: flex;
+    gap: 32px;
+    
+}
+.menu{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 12px;
+    z-index: 1000;
+    margin: 0;
+}
+.pages-p{
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+}
+    
 }
 </style>

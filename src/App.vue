@@ -23,6 +23,8 @@ font-family: 'Public Sans', sans-serif;
 }
 body{
   background-color: rgba(97, 97, 97, 0.158);
+  width: 100%;
+  min-height: 100vh;
 }
 
 </style>
