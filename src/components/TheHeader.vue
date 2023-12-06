@@ -3,6 +3,7 @@
         <header>
         <img src="../assets/images/logo.svg" alt="logo">
         <img class="burger" :src="outputBurgerPic" @click="changeBurgerPic">
+        <button class="btn">Request Invite</button>
     </header>
     <div class="menu" v-if="menu">
         <ul>
@@ -93,6 +94,26 @@ p{
     cursor: pointer;
 }
 
+.btn{
+    padding: 13px 35px;
+    justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+background: linear-gradient(90deg, #31D35C 0%, #2BB7DB 100%);
+border: none;
+color: white;
+cursor: pointer;
+font-weight: 300;
+font-size: 15px;
+transition: 5s;
+display: none;
+
+}
+.btn:hover{
+    background: linear-gradient(90deg,#2BB7DB  0%, #31D35C 100%);
+}
+
 @media (min-width: 1024px) {
 .menu ul {
     display: flex;
@@ -100,7 +121,7 @@ p{
     
 }
 .menu{
-    width: 70%;
+    width: 60%;
     position: absolute;
     left: 15%;
     top: 12px;
@@ -113,6 +134,10 @@ p{
 
 .burger{
     display: none;
+}
+.btn{
+    display: flex;
+
 }
     
 }
