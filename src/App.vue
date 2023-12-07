@@ -1,13 +1,16 @@
 
 <template>
   <the-header></the-header>
+  <the-main></the-main>
 </template>
 
 <script >
 import TheHeader from './components/TheHeader.vue';
+import TheMain from './components/TheMain.vue'
 export default{
   components:{
-    TheHeader
+    TheHeader,
+    TheMain
   }
 }
 </script>
@@ -22,7 +25,7 @@ export default{
 font-family: 'Public Sans', sans-serif;
 }
 body{
-  background-color: rgba(97, 97, 97, 0.158);
+  background-color: rgba(255, 255, 255, 0.158);
   width: 100%;
   min-height: 100vh;
 }

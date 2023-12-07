@@ -1,7 +1,7 @@
 <template >
     <div class="cont">
         <header>
-        <img src="../assets/images/logo.svg" alt="logo">
+        <img class="logo" src="../assets/images/logo.svg" alt="logo">
         <img class="burger" :src="outputBurgerPic" @click="changeBurgerPic">
         <button class="btn">Request Invite</button>
     </header>
@@ -61,6 +61,8 @@ methods: {
 <style scoped>
 .cont{
     position: relative;
+    widows: 100%;
+    z-index: 100;
 }
 header{
     display: flex;
@@ -74,6 +76,11 @@ p{
     color: #9698A6;
 }
 
+.logo{
+    cursor: pointer;
+    
+}
+
 .burger{
     transition: ease-in 1s;
 }
@@ -84,6 +91,8 @@ p{
     display: flex;
     justify-content: center;
     transition: ease-in 1s;
+    position: absolute;
+    width: calc(100% - 32px);
 }
 .menu li {
     list-style: none;
@@ -95,8 +104,8 @@ p{
 }
 
 .btn{
-    padding: 13px 35px;
-    justify-content: center;
+padding: 13px 35px;
+justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 50px;
@@ -123,7 +132,7 @@ display: none;
 .menu{
     width: 60%;
     position: absolute;
-    left: 15%;
+    left: 20%;
     top: 12px;
     z-index: 1000;
     margin: 0;
