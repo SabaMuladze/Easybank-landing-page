@@ -7,9 +7,9 @@ account into your financial hub. Control your
 finances like never before.</p>
         </div>
         <div class="reasons">
-            <ul>
+            <ul class="cards">
                 <li v-for="(reason, index) in reasons" :key="reason.title">
-                    <div>
+                    <div class="card">
                         <img :src="`../public/${reason.img}`" alt="img">
                         <h3>{{ reason.title }}</h3>
                         <p>{{ reason.description }}</p>
@@ -69,5 +69,26 @@ to hitting your limits.`,
     text-align: center;
     gap: 25px;
    padding-top: 115px;
+   margin-bottom: 80px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+li{
+    list-style: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+.card p{
+ padding: 10% 0;
 }
 </style>
