@@ -26,7 +26,7 @@ export default{
     display: flex;
     flex-direction: column;
     height: 90vh;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 .main-pic{
     display: flex;
@@ -95,9 +95,6 @@ margin: 10px auto 0 auto;
 }
 
 @media (min-width:768px) {
-    .phones{
-        /* scale: 0.75; */
-    }
     .main-pic{
         top: -150px;
     }
@@ -108,7 +105,11 @@ margin: 10px auto 0 auto;
     flex-direction: row-reverse;
     flex-grow: 12;
 }
-
+    .main-pic{
+        top: -150px;
+        width: 50%;
+        background-position: 0 100px;
+    }
 
 .main-article{
     flex:1;
@@ -124,6 +125,9 @@ margin: 10px auto 0 auto;
     }
     .main-pic{
             right: -200px;
+            width: 100%;
+             background-position: 20px 150px ;
+
 
     }
  h2{
