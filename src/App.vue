@@ -25,9 +25,11 @@ export default{
 font-family: 'Public Sans', sans-serif;
 }
 body{
-  background-color: rgba(255, 255, 255, 0.158);
+  background-color:  #FAFAFA;;
   width: 100%;
   min-height: 100vh;
+  background-image: url('../assets/images/bg-intro-mobile.svg');
+  background-size: 800px 700px;
 }
 
 </style>

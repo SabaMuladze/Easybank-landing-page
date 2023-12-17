@@ -25,9 +25,26 @@ export default{
 .cont{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    height: 90vh;
+    /* overflow: hidden; */
 }
 .main-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    overflow:visible;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    top: -80px;
+}
+.phones{
+    position: relative;
+    min-width: 300px;
+}
+/* .main-pic{
     background-image: url('../assets/images/bg-intro-mobile.svg');
     width: 100%;
     height: 300px;
@@ -37,17 +54,8 @@ export default{
     position: relative;
     display: flex;
     justify-content: center;
-}
-.phones{
-width: 100%;
-max-width: 580px;
-height: 155%;
-margin: 0 auto;
-position: relative;
-top: -150px;
-z-index: 1;
+} */
 
-}
 
 .main-article{
  padding: 0 30px;
@@ -86,25 +94,21 @@ margin: 10px auto 0 auto;
     background: linear-gradient(90deg,#2BB7DB  0%, #31D35C 100%);
 }
 
+@media (min-width:768px) {
+    .phones{
+        /* scale: 0.75; */
+    }
+    .main-pic{
+        top: -150px;
+    }
+}
+
 @media (min-width:1024px) {
 .cont{
     flex-direction: row-reverse;
     flex-grow: 12;
 }
 
-.main-pic{
-    flex: 1;
-    background-image: url('../assets/images/bg-intro-desktop.svg');
-    max-height: 650px;
-    height: 100%;
-    overflow: hidden ;
-    position: relative;
-}
-
-.phones{
-height: 650px;
-top:0
-}
 
 .main-article{
     flex:1;
@@ -118,6 +122,10 @@ top:0
         text-align:left;
         margin-left: 180px;
     }
+    .main-pic{
+            right: -200px;
+
+    }
  h2{
     font-size: 52px;
  }
@@ -125,13 +133,6 @@ top:0
     margin-left: 180px;
  }
 
- .phones{
-height: 800px;
-max-width: 700px !important;
-position: relative;
-}
-.main-pic{
-}
 
 }
 </style>
