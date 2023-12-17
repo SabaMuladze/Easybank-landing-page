@@ -59,7 +59,7 @@ to hitting your limits.`,
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 65vh;
     width: 100%;
 }
 
@@ -73,7 +73,8 @@ to hitting your limits.`,
 }
 .cards{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -88,7 +89,47 @@ li{
     text-align: center;
     max-width: 300px;
 }
+p{
+    color: #9698A6;
+    font-size: 14px;
+}
+h3{
+    font-size: 24px;
+    color: #2D314D;
+}
+h2{
+    font-size: 36px;
+}
 .card p{
  padding: 10% 0;
 }
+.card img{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .heading{
+        width: 60%;
+        text-align: start;
+        padding-left: 170px;
+    }
+    .heading p{
+        max-width: 680px;
+        font-size: 18px;
+    }
+    .cards{
+        justify-content:center;
+
+    }
+    .card{
+        text-align: start;
+        align-items: start;
+    }
+    
+    .cont{
+        padding: 0 80px;
+    }
+   
+}
+
 </style>
