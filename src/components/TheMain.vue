@@ -25,8 +25,8 @@ export default{
 .cont{
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    overflow-x: hidden;
+    /* height: 90vh; */
+    overflow: hidden;
 }
 .main-pic{
     display: flex;
@@ -87,7 +87,8 @@ font-weight: 300;
 font-size: 15px;
 transition: 5s;
 width: 175px;
-margin: 10px auto 0 auto;
+margin: 10px auto 20px auto;
+
 
 }
 .btn:hover{

@@ -2,15 +2,19 @@
 <template>
   <the-header></the-header>
   <the-main></the-main>
+    <why-choose></why-choose>
+
 </template>
 
 <script >
 import TheHeader from './components/TheHeader.vue';
-import TheMain from './components/TheMain.vue'
+import TheMain from './components/TheMain.vue';
+import WhyChoose from './components/WhyChoose.vue';
 export default{
   components:{
     TheHeader,
-    TheMain
+    TheMain,
+    WhyChoose
   }
 }
 </script>
