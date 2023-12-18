@@ -2,7 +2,8 @@
 <template>
   <the-header></the-header>
   <the-main></the-main>
-    <why-choose></why-choose>
+  <why-choose></why-choose>
+  <latest-articles></latest-articles>
 
 </template>
 
@@ -10,11 +11,13 @@
 import TheHeader from './components/TheHeader.vue';
 import TheMain from './components/TheMain.vue';
 import WhyChoose from './components/WhyChoose.vue';
+import LatestArticles from './components/LatestArticles.vue'
 export default{
   components:{
     TheHeader,
     TheMain,
-    WhyChoose
+    WhyChoose,
+    LatestArticles
   }
 }
 </script>
