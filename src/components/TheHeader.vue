@@ -78,7 +78,11 @@ p{
 
 .logo{
     cursor: pointer;
-    
+    transition: 0.3s;
+}
+
+.logo:hover{
+ scale: 1.1;
 }
 
 .burger{
@@ -96,7 +100,9 @@ p{
 }
 .menu li {
     list-style: none;
+    cursor: pointer;
 }
+
 .pages-p{
     font-size: 24px;
     margin: 10px;
@@ -147,6 +153,11 @@ display: none;
 .btn{
     display: flex;
 
+}
+
+li:hover p {
+    scale: 1.1;
+    color: #323233;
 }
     
 }

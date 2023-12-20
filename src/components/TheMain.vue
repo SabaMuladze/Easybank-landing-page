@@ -44,18 +44,6 @@ export default{
     position: relative;
     min-width: 300px;
 }
-/* .main-pic{
-    background-image: url('../assets/images/bg-intro-mobile.svg');
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: center;
-} */
-
 
 .main-article{
  padding: 0 30px;
@@ -85,11 +73,8 @@ color: white;
 cursor: pointer;
 font-weight: 300;
 font-size: 15px;
-transition: 5s;
 width: 175px;
 margin: 10px auto 20px auto;
-
-
 }
 .btn:hover{
     background: linear-gradient(90deg,#2BB7DB  0%, #31D35C 100%);

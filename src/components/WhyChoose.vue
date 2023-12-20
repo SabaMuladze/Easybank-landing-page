@@ -96,6 +96,8 @@ p{
 h3{
     font-size: 24px;
     color: #2D314D;
+    transition: 0.3s;
+    cursor:default;
 }
 h2{
     font-size: 36px;
@@ -127,10 +129,15 @@ h2{
     .card{
         text-align: start;
         align-items: start;
+        cursor: default;
     }
     
     .cont{
         padding: 0 80px;
+    }
+
+    .card:hover h3{
+        scale: 1.1;
     }
    
 }

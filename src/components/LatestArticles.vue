@@ -122,6 +122,13 @@ h2{
         flex-direction: row;
     flex-wrap: wrap;
 }
+li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+li:hover{
+    scale: 1.1;
+}
 }
 @media (min-width: 1440px) {
 .head{
