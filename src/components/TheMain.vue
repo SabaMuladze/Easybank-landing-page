@@ -43,6 +43,7 @@ export default{
 .phones{
     position: relative;
     min-width: 300px;
+    transition: 1.5s;
 }
 
 .main-article{
@@ -96,7 +97,11 @@ margin: 10px auto 20px auto;
         width: 50%;
         background-position: 0 100px;
     }
+    .main-pic:hover .phones{
+    transform:translateX(-20px);
+    
 
+}
 .main-article{
     flex:1;
     justify-content: center;
