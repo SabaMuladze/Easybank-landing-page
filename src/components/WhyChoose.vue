@@ -2,7 +2,7 @@
     <div class="cont">
         <div class="heading">
             <h2>Why choose Easybank?</h2>
-            <p>We leverage Open Banking to turn your bank
+            <p class="par">We leverage Open Banking to turn your bank
 account into your financial hub. Control your
 finances like never before.</p>
         </div>
@@ -66,10 +66,10 @@ to hitting your limits.`,
 .heading{
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 25px;
    padding-top: 115px;
    margin-bottom: 80px;
+   align-items: center;
 }
 .cards{
     display: flex;
@@ -106,11 +106,14 @@ h2{
 .card img{
     margin-bottom: 20px;
 }
+.par{
+    max-width: 600px;
+}
 
 @media (min-width: 1024px) {
     .heading{
         width: 60%;
-        text-align: start;
+        align-items: start;
         padding-left: 170px;
     }
     .heading p{
