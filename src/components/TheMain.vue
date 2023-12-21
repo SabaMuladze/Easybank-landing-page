@@ -43,7 +43,7 @@ export default{
 .phones{
     position: relative;
     min-width: 300px;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 .main-article{

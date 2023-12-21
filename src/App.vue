@@ -4,6 +4,7 @@
   <the-main></the-main>
   <why-choose></why-choose>
   <latest-articles></latest-articles>
+  <Footer></Footer>
 
 </template>
 
@@ -11,13 +12,15 @@
 import TheHeader from './components/TheHeader.vue';
 import TheMain from './components/TheMain.vue';
 import WhyChoose from './components/WhyChoose.vue';
-import LatestArticles from './components/LatestArticles.vue'
+import LatestArticles from './components/LatestArticles.vue';
+import Footer from './components/footer.vue';
 export default{
   components:{
     TheHeader,
     TheMain,
     WhyChoose,
-    LatestArticles
+    LatestArticles,
+    Footer
   }
 }
 </script>
@@ -38,5 +41,7 @@ body{
   background-image: url('../assets/images/bg-intro-mobile.svg');
   background-size: 800px 700px;
 }
+
+
 
 </style>
