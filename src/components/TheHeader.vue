@@ -22,8 +22,8 @@ export default {
   data() {
     return {
       menu: false,
-      burger: "public/icon-hamburger.svg",
-      closeBurger: "public/icon-close.svg",
+      burger: "/public/icon-hamburger.svg",
+      closeBurger: "/public/icon-close.svg",
       screenWidth: window.innerWidth,
     };
   },
