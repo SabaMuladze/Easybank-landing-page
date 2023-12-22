@@ -71,8 +71,8 @@ to hitting your limits.`,
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-top: 115px;
   margin-bottom: 80px;
+  padding: 115px 10px 80px 10px;
   align-items: center;
 }
 .cards {
@@ -105,6 +105,7 @@ h3 {
 }
 h2 {
   font-size: 36px;
+  text-align: center;
 }
 .card p {
   padding: 10% 0;
@@ -120,7 +121,7 @@ h2 {
   .heading {
     width: 60%;
     align-items: start;
-    padding-left: 170px;
+    padding: 115px 0 0 170px;
   }
   .heading p {
     max-width: 680px;
@@ -141,6 +142,9 @@ h2 {
 
   .card:hover h3 {
     scale: 1.1;
+  }
+  h2 {
+    text-align: start;
   }
 }
 </style>
