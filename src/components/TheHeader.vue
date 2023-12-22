@@ -18,12 +18,14 @@
 </template>
 
 <script>
+import burgerIcon from "/public/icon-hamburger.svg";
+import closeBurgerIcon from "/public/icon-close.svg";
 export default {
   data() {
     return {
       menu: false,
-      burger: "/public/icon-hamburger.svg",
-      closeBurger: "/public/icon-close.svg",
+      burger: burgerIcon,
+      closeBurger: closeBurgerIcon,
       screenWidth: window.innerWidth,
     };
   },
