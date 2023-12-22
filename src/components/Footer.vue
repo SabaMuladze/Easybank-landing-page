@@ -5,7 +5,7 @@
       <ul>
         <li v-for="(icon, index) in icons" :key="index">
           <a :href="icon.src" target="_blank"
-            ><img :src="'./public' + icon.img" alt="icon"
+            ><img :src="icon.img" alt="icon"
           /></a>
         </li>
       </ul>
