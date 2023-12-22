@@ -4,7 +4,9 @@
       <img src="../assets/images/logo-footer.svg" alt="" />
       <ul>
         <li v-for="(icon, index) in icons" :key="index">
-          <img :src="'./public' + icon.img" alt="icon" />
+          <a :href="icon.src" target="_blank"
+            ><img :src="'./public' + icon.img" alt="icon"
+          /></a>
         </li>
       </ul>
     </div>
@@ -38,18 +40,23 @@ export default {
       icons: [
         {
           img: "/icon-facebook.svg",
+          src: "https://www.facebook.com/",
         },
         {
           img: "/icon-youtube.svg",
+          src: "https://www.youtube.com",
         },
         {
           img: "/icon-twitter.svg",
+          src: "https://www.X.com",
         },
         {
           img: "/icon-pinterest.svg",
+          src: "https://www.pinterest.com",
         },
         {
           img: "/icon-instagram.svg",
+          src: "https://www.instagram.com",
         },
       ],
       pages1: [
@@ -106,6 +113,9 @@ ul {
   margin-top: 15px;
   text-align: center;
 }
+.pages-ul a:hover {
+  color: #2ecc71;
+}
 li {
   list-style: none;
 }
@@ -134,6 +144,9 @@ a {
   width: 175px;
   margin: 10px auto 20px auto;
 }
+.btn:hover {
+  background: linear-gradient(90deg, #2bb7db 0%, #31d35c 100%);
+}
 .btn-rights {
   display: flex;
   flex-direction: column;
@@ -142,5 +155,22 @@ a {
 }
 .btn-rights p {
   color: #9698a6;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 160px;
+  }
+  .pages-cont {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .btn-rights {
+    margin-top: 0;
+  }
+  .pages-ul {
+    text-align: start;
+  }
 }
 </style>
